@@ -1,0 +1,25 @@
+html  
+  head
+    title account list
+
+  body 
+    h2 account list
+    br
+    a(href="/account/add") ADD
+    br
+    table(border="1")
+     tr
+       th ID
+       th Username
+       th FullName
+       th Action
+     each account in accounts
+       tr
+        td #{account.id}
+        td #{account.username}
+        td #{account.fullName}
+        td 
+         a(href="/account/edit/"+ account.id) ແກ້ໄຂ |
+         a(href="/account/delete/"+ account.id, onclick="return confirm('ທ່ານຕ້ອງການລືບຫຼືບໍ່')") X
+        
+      

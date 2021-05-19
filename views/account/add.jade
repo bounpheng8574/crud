@@ -1,0 +1,24 @@
+html  
+  head
+    title account list
+
+  body 
+   h2 account Info
+   form(method="post", action="/account/add")
+    table(border="0")
+     tr
+      th Username
+      td 
+       input(type="text", name="username")
+     tr  
+      th Password
+      td 
+       input(type="password", name="password")
+     tr  
+      th Full Name
+      td 
+       input(type="text", name="fullName")
+     tr  
+      th &nbsp;
+      td 
+       input(type="submit", value="Save")
